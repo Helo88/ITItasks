@@ -3,9 +3,9 @@
   margin: 0px;
   color: rgb(6, 83, 134);
 }
-:root{
-    --dropDown:rgb(165, 186, 206) ;
-    --dropContent: rgb(98, 143, 185);
+:root {
+  --dropDown: rgb(165, 186, 206);
+  --dropContent: rgb(98, 143, 185);
 }
 ul {
   list-style: none;
@@ -18,14 +18,15 @@ li {
   text-align: center;
   background-color: var(--dropContent);
 }
-li:hover, div:hover p:hover{
-    background-color: var(--dropDown);
+li:hover,
+div:hover p:hover {
+  background-color: var(--dropDown);
 }
-p{
-    width: 100%;
-    padding: 15px;
-    color: rgb(6, 83, 134);
-    text-align: left;
+p {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--dropContent);
+  text-align: left;
 }
 
 #menus {
@@ -34,46 +35,41 @@ p{
   margin: 50px auto;
   background-color: white;
   display: flex;
-  
+  border: 3px solid var(--dropDown);
 }
 #menus > div {
   width: 30%;
   font-size: 20px;
   text-align: center;
 }
-.dropDown p{
-    background-color: var(--dropContent);
+.dropDown p {
 }
 #header {
-    background-color: var(--dropDown);
-    /* background-color: aquamarine; */
+  background-color: var(--dropDown);
+  /* background-color: aquamarine; */
 }
 
 .dropContent {
-    display: none;
+  display: none;
 }
-#menus .dropDown:hover > .dropContent {
-display: block;
-}
-#menus .dropDown:hover > .right {
-    display: block;
-    }
 
-#menus .dropContent .inside:hover + *{
-   margin-top: -58.5%;
-   /* background-color: aqua; */
- }
-.right {
-    display: none;
-    margin-top: -54px;
-    margin-left: 119%;
+#menus .dropDown:hover > .dropContent,
+#menus .drop:hover > .dropContent {
+  display: block;
 }
-.right li {
-    width: 200px;  
-    /* background-color: blue;  */
+
+#rt li {
+  width: 200px;
 }
-/* p alone */
-.dropContent > p
-{
-    background-color: var(--dropContent);
+
+#rt {
+  position: relative;
+}
+
+#rt ul {
+  display: none;
+  color: black;
+  position: absolute;
+  left: 120%;
+  top: 0px;
 }
