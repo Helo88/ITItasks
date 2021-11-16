@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS magic</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body >
+	<div id="header"  style="background-color: red; padding: 20px; height: 70%;">
+		<h1>This is the page header</h1>
+	</div>
+	<span id="linksbar" style=" display:inline-block;width: 25%; height: 70%; background-color: gray; padding: 20px;">
+		<div id="loginform" >
+			User name: <input type="text"/>
+			</br>
+			Password: <input type="password"/>
+			<br/>
+			<input type="checkbox" /> remember me
+			<br/>
+			<button>login</button>
+		</div>
+		<h2> site menu</h2>
+		<ul class="none-bullet-list">
+			<li><a href="#">link1</a></li>
+			<li><a href="#">link2</a></li>
+			<li><a href="#">link3</a></li>
+			<li><a href="#">link4</a></li>
+			<li><a href="#">link5</a></li>
+			<li>test</li>
+		</ul>
+	</span>
+	<span id="content" style=" margin-top:0px;float:right;width: 75%; height:100%; background-color: pink; padding: 20px;" >
+		<h2> about us</h2>
+		<p id="aboutus">
+			This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph.
+		</p>
+		
+		<div id="titles">
+			<!-- <p class="tabled-bordered"> title1</p>
+			<p class="tabled-bordered"> title2</p>
+			<p class="tabled-bordered"> title3</p> -->
+			<span>h</span>
+			<span>h</span>
+			<span>h</span>
+		</div>
+
+	</span>
+
+<style>
+.none-bullet-list{
+	list-style: none;
+}
+span[id=linksbar] li a {
+	background-color: pink;
+	color: red;
+	text-decoration: none;
+}
+span[id=linksbar] li a:hover {
+	background-color: red;
+	color: pink;
+}
+.content h2+p{
+	font-size: 12px;
+	font-weight: 800;
+}
+#loginform{
+border:2px dashed rgb(20,70,60);
+}
+
+input{
+	margin-bottom: 30px;
+}
+
+input[type="text"]{
+	background-color: yellow;
+	
+}
+input[type="text"]:focus{
+	background-color: white;
+}
+#titles > *{
+	padding: 5px;
+	border: 1px solid black;
+	margin-top: 30px;
+}
+.tabled-bordered{
+	display: table;
+}
+#aboutus{
+	color: red ;
+	margin: 30px;
+}
+#content #aboutus{
+	color: yellow !important ;
+}
+</style>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color: rgb(6, 83, 134);
+}
+:root{
+    --dropDown:rgb(165, 186, 206) ;
+    --dropContent: rgb(98, 143, 185);
+}
+ul {
+  list-style: none;
+}
+
+li {
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 3px;
+  text-align: center;
+  background-color: var(--dropContent);
+}
+li:hover, div:hover p:hover{
+    background-color: var(--dropDown);
+}
+p{
+    width: 100%;
+    padding: 15px;
+    color: rgb(6, 83, 134);
+    text-align: left;
+}
+
+#menus {
+  width: 600px;
+  height: 300px;
+  margin: 50px auto;
+  background-color: white;
+  display: flex;
+  
+}
+#menus > div {
+  width: 30%;
+  font-size: 20px;
+  text-align: center;
+}
+.dropDown p{
+    background-color: var(--dropContent);
+}
+#header {
+    background-color: var(--dropDown);
+    /* background-color: aquamarine; */
+}
+
+.dropContent {
+    display: none;
+}
+#menus .dropDown:hover > .dropContent {
+display: block;
+}
+#menus .dropDown:hover > .right {
+    display: block;
+    }
+
+#menus .dropContent .inside:hover + *{
+   margin-top: -58.5%;
+   /* background-color: aqua; */
+ }
+.right {
+    display: none;
+    margin-top: -54px;
+    margin-left: 119%;
+}
+.right li {
+    width: 200px;  
+    /* background-color: blue;  */
+}
+/* p alone */
+.dropContent > p
+{
+    background-color: var(--dropContent);
+}
